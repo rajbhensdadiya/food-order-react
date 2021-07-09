@@ -10,9 +10,8 @@ const AvailableMeals = () => {
 
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch(
-        "https://custom-hooks-7e06f-default-rtdb.firebaseio.com/meals.json"
-      );
+      //TODO firebase
+      const response = await fetch("firebaseio.com/meals.json");
 
       if (!response.ok) {
         throw new Error("Something went wrong");

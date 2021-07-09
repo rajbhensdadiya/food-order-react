@@ -29,16 +29,14 @@ const Cart = (props) => {
 
   const submitOrderHandler = async (userData) => {
     setIsSubmitting(true);
-    await fetch(
-      "https://custom-hooks-7e06f-default-rtdb.firebaseio.com/orders.json",
-      {
-        method: "POST",
-        body: JSON.stringify({
-          user: userData,
-          orderedItems: cartCtx.items,
-        }),
-      }
-    );
+    //TODO firebaseurl
+    await fetch("firebase.com/orders.json", {
+      method: "POST",
+      body: JSON.stringify({
+        user: userData,
+        orderedItems: cartCtx.items,
+      }),
+    });
     setIsSubmitting(false);
     setDidSubmit(true);
     cartCtx.clearCart();
