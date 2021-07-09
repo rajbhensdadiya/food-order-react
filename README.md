@@ -1,4 +1,6 @@
-# Food Ordering App (ReactJS)
+# Food Ordering App (ReactJS) 
+
+<a href="https://foodorderreact.netlify.app/"> Click here to visit app </a>
 
 ## Features
 
